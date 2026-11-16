@@ -57,7 +57,7 @@ git clone <https://github.com/light0vij/OpenMC-Tokamak-Fusion-Suite.git> OpenMC-
 cd OpenMC-Tokamak-Fusion-Suite
 ```
 
-**3. Download the nuclear data (separately).** The data are not part of this repository. Download **FENDL-3.2 (HDF5)** into a folder called `openmc_data` inside the project. More libraries are on the [OpenMC data page](https://openmc.org/official-data-libraries/).
+**3. Download the nuclear data (separately).** The data are not part of this repository. Download **FENDL-3.2 (HDF5)** into a folder called `openmc_data` inside the project. More libraries are on the [OpenMC data page](https://openmc.org/data/).
 
 ```bash
 mkdir -p openmc_data && cd openmc_data
