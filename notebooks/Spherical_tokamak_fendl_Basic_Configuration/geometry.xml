@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<geometry>
+  <cell id="18" name="Copper Magnet Rod" material="1" region="-1 -8" universe="3"/>
+  <cell id="19" name="Protective Shield" material="2" region="2 -3 -8" universe="3"/>
+  <cell id="20" name="First Wall" material="3" region="3 4 -5" universe="3"/>
+  <cell id="21" name="Breeding Blanket" material="4" region="3 5 -6" universe="3"/>
+  <cell id="22" name="Reflector" material="8" region="3 6 -7" universe="3"/>
+  <cell id="23" name="Outer Shield" material="5" region="3 7 -8" universe="3"/>
+  <cell id="24" name="Plasma" material="void" region="-10" universe="3"/>
+  <cell id="25" name="Vacuum Space" material="void" region="-8 (1 | 8) (-2 | 3 | 8) (-3 | -4 | 5) (-3 | -5 | 6) (-3 | -6 | 7) (-3 | -7 | 8) 10" universe="3"/>
+  <cell id="26" name="Graveyard Void" material="void" region="8 -9" universe="3"/>
+  <surface id="1" type="z-cylinder" coeffs="0.0 0.0 20.0"/>
+  <surface id="2" type="z-cylinder" coeffs="0.0 0.0 23.0"/>
+  <surface id="3" type="z-cylinder" coeffs="0.0 0.0 53.0"/>
+  <surface id="4" type="sphere" coeffs="0.0 0.0 0.0 200.0"/>
+  <surface id="5" type="sphere" coeffs="0.0 0.0 0.0 201.0"/>
+  <surface id="6" type="sphere" coeffs="0.0 0.0 0.0 301.0"/>
+  <surface id="7" type="sphere" coeffs="0.0 0.0 0.0 321.0"/>
+  <surface id="8" type="sphere" coeffs="0.0 0.0 0.0 351.0"/>
+  <surface id="9" type="sphere" boundary="vacuum" coeffs="0.0 0.0 0.0 500.0"/>
+  <surface id="10" type="z-torus" coeffs="0.0 0.0 0.0 126.5 100.0 50.0"/>
+</geometry>

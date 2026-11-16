@@ -1,0 +1,127 @@
+Cooldown,Component,Isotope,Activity (Bq/cm3)
+0 d (shutdown),Copper Magnet Rod,Cu64,5291074781.719835
+0 d (shutdown),Copper Magnet Rod,Cu66,1214065039.884421
+0 d (shutdown),Copper Magnet Rod,Cu62,491499824.76786536
+0 d (shutdown),Copper Magnet Rod,Ni65,19040094.162247926
+0 d (shutdown),Copper Magnet Rod,Co60,9782597.651884742
+0 d (shutdown),Copper Magnet Rod,Co62,5887546.070126517
+0 d (shutdown),Copper Magnet Rod,Ni63,1438888.2183310394
+0 d (shutdown),Protective Shield,W185,172589127763.11035
+0 d (shutdown),Protective Shield,W181,79142913623.3176
+0 d (shutdown),Protective Shield,W187,57629264095.45074
+0 d (shutdown),Protective Shield,Be8,17085889611.80422
+0 d (shutdown),Protective Shield,W183_m1,11922614742.403069
+0 d (shutdown),Protective Shield,W185_m1,8798539844.93627
+0 d (shutdown),Protective Shield,Li8,8135160764.917802
+0 d (shutdown),First Wall,W185,2567874000921.217
+0 d (shutdown),First Wall,W181,1481971434703.4053
+0 d (shutdown),First Wall,W187,617750992874.1735
+0 d (shutdown),First Wall,W183_m1,133788393554.25015
+0 d (shutdown),First Wall,W185_m1,96681531614.51416
+0 d (shutdown),First Wall,Re186,51682913513.27395
+0 d (shutdown),First Wall,Re188,10632501986.239264
+0 d (shutdown),Breeding Blanket,H3,19731718774.734375
+0 d (shutdown),Breeding Blanket,Pb203,2415614860.2054152
+0 d (shutdown),Breeding Blanket,Pb209,1194943896.7110353
+0 d (shutdown),Breeding Blanket,He6,204843875.84701446
+0 d (shutdown),Breeding Blanket,Pb207_m1,113365832.87518463
+0 d (shutdown),Breeding Blanket,Tl206,72601172.73650378
+0 d (shutdown),Breeding Blanket,Tl207,55583507.17838713
+0 d (shutdown),Reflector,Mn56,2921986180.7030277
+0 d (shutdown),Reflector,Cr51,1192717257.7277758
+0 d (shutdown),Reflector,Fe55,192341869.2641929
+0 d (shutdown),Reflector,Mo99,191028970.1770429
+0 d (shutdown),Reflector,Tc99_m1,167743493.11419994
+0 d (shutdown),Reflector,Co60_m1,123939244.72379088
+0 d (shutdown),Reflector,Co60,42703484.69273555
+0 d (shutdown),Outer Shield,W187,409209058.74080586
+0 d (shutdown),Outer Shield,W185,167937243.28775907
+0 d (shutdown),Outer Shield,W183_m1,53236578.34749436
+0 d (shutdown),Outer Shield,W185_m1,18270691.024228476
+0 d (shutdown),Outer Shield,W181,7715233.883179127
+0 d (shutdown),Outer Shield,Re188,4563.407155167825
+0 d (shutdown),Outer Shield,Re186,3919.1360987831677
+1 d,Copper Magnet Rod,Cu64,1427860358.3226554
+1 d,Copper Magnet Rod,Co60,9779076.226427607
+1 d,Copper Magnet Rod,Ni63,1438860.5521064328
+1 d,Copper Magnet Rod,Ni65,25865.25427373668
+1 d,Copper Magnet Rod,Zn65,3417.478268404297
+1 d,Copper Magnet Rod,H3,975.36160178331
+1 d,Copper Magnet Rod,Co61,12.645236216603307
+1 d,Protective Shield,W185,171003652413.2752
+1 d,Protective Shield,W181,78690767076.59048
+1 d,Protective Shield,W187,28689290479.65445
+1 d,Protective Shield,H3,1122819960.2164164
+1 d,Protective Shield,Re186,447828048.5463218
+1 d,Protective Shield,Ta179,137591201.54380298
+1 d,Protective Shield,Ta182,127426856.68065067
+1 d,First Wall,W185,2544283922332.1357
+1 d,First Wall,W181,1473504874200.735
+1 d,First Wall,W187,307531910338.26074
+1 d,First Wall,Re186,42960796316.22052
+1 d,First Wall,Ta182,4215406736.6353297
+1 d,First Wall,Re184,4079432816.249539
+1 d,First Wall,Re188,3999384319.7196255
+1 d,Breeding Blanket,H3,19728682060.760387
+1 d,Breeding Blanket,Pb203,1753478770.197115
+1 d,Breeding Blanket,Pb209,7458861.43984124
+1 d,Breeding Blanket,Hg203,6083795.798779294
+1 d,Breeding Blanket,Tl204,1009930.7149348264
+1 d,Breeding Blanket,Tl202,25897.9561054588
+1 d,Breeding Blanket,Bi210,7204.737536642625
+1 d,Reflector,Cr51,1163246041.7583413
+1 d,Reflector,Fe55,192209035.1710343
+1 d,Reflector,Mo99,148439789.15873158
+1 d,Reflector,Tc99_m1,142353423.28274253
+1 d,Reflector,Co60,42688579.43519655
+1 d,Reflector,Fe59,29492229.579598274
+1 d,Reflector,Co58,5161901.27308344
+1 d,Outer Shield,W187,203714514.44662327
+1 d,Outer Shield,W185,166394650.3078695
+1 d,Outer Shield,W181,7671156.451634532
+1 d,Outer Shield,Re186,3257.7344470881953
+1 d,Outer Shield,Re188,1716.5121955602515
+1 d,Outer Shield,Ta182,169.02163920342565
+1 d,Outer Shield,Ta179,161.05910805751256
+7 d,Copper Magnet Rod,Co60,9757974.276345339
+7 d,Copper Magnet Rod,Ni63,1438694.5658733961
+7 d,Copper Magnet Rod,Cu64,551488.8761958038
+7 d,Copper Magnet Rod,Zn65,3359.7247652088354
+7 d,Copper Magnet Rod,H3,974.461298606362
+7 d,Copper Magnet Rod,Fe59,10.019638263443012
+7 d,Copper Magnet Rod,Co58,4.1940552229056145
+7 d,Protective Shield,W185,161791258764.1131
+7 d,Protective Shield,W181,76031619970.86305
+7 d,Protective Shield,H3,1121783546.2592993
+7 d,Protective Shield,W187,436697002.87644017
+7 d,Protective Shield,Re186,147728164.04982612
+7 d,Protective Shield,Ta179,136621462.04243514
+7 d,Protective Shield,Ta182,122889273.93434402
+7 d,First Wall,W185,2407216995883.6216
+7 d,First Wall,W181,1423711659989.309
+7 d,First Wall,Re186,14171777731.146374
+7 d,First Wall,W187,4681128786.67476
+7 d,First Wall,Ta182,4065299001.303223
+7 d,First Wall,Re184,3627252193.5346565
+7 d,First Wall,Ta179,2584885981.626457
+7 d,Breeding Blanket,H3,19710471588.763313
+7 d,Breeding Blanket,Pb203,256529567.72598952
+7 d,Breeding Blanket,Hg203,5564298.183412423
+7 d,Breeding Blanket,Tl204,1006899.4529376699
+7 d,Breeding Blanket,Tl202,18437.512404090012
+7 d,Breeding Blanket,Po210,4455.0931455465925
+7 d,Breeding Blanket,Bi210,3141.7730588472837
+7 d,Reflector,Cr51,1001096780.2145395
+7 d,Reflector,Fe55,191413954.8764876
+7 d,Reflector,Co60,42596463.14001013
+7 d,Reflector,Mo99,32678107.34351703
+7 d,Reflector,Tc99_m1,31570222.237574592
+7 d,Reflector,Fe59,26860482.00617303
+7 d,Reflector,Co58,4867620.157348027
+7 d,Outer Shield,W185,157430555.1080423
+7 d,Outer Shield,W181,7411929.934550368
+7 d,Outer Shield,W187,3100861.555442038
+7 d,Outer Shield,Re186,1074.6516000384374
+7 d,Outer Shield,Ta182,163.00289485250832
+7 d,Outer Shield,Ta179,159.9239673116946
+7 d,Outer Shield,Ta183,53.54580144001931

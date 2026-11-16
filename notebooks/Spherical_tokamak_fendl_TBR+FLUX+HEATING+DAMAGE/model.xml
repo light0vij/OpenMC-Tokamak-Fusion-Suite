@@ -1,0 +1,185 @@
+<?xml version='1.0' encoding='utf-8'?>
+<model>
+  <materials>
+    <cross_sections>/nuclear_data/fendl-3.2-hdf5/cross_sections.xml</cross_sections>
+    <material id="1" name="Central Pole (Cu)">
+      <density value="8.96" units="g/cm3"/>
+      <nuclide name="Cu63" wo="0.684792"/>
+      <nuclide name="Cu65" wo="0.315208"/>
+    </material>
+    <material id="2" name="Tungsten diboride (WB2)">
+      <density value="13.0" units="g/cm3"/>
+      <nuclide name="W180" ao="0.00039999999999999996"/>
+      <nuclide name="W182" ao="0.08833333333333333"/>
+      <nuclide name="W183" ao="0.0477"/>
+      <nuclide name="W184" ao="0.10213333333333333"/>
+      <nuclide name="W186" ao="0.09476666666666667"/>
+      <nuclide name="B10" ao="0.13213333333333332"/>
+      <nuclide name="B11" ao="0.5345333333333333"/>
+    </material>
+    <material id="3" name="First Wall (W)">
+      <density value="19.3" units="g/cm3"/>
+      <nuclide name="W180" wo="0.001174575531392815"/>
+      <nuclide name="W182" wo="0.26227049476287323"/>
+      <nuclide name="W183" wo="0.14240602528446922"/>
+      <nuclide name="W184" wo="0.306581920873831"/>
+      <nuclide name="W186" wo="0.28756698354743376"/>
+    </material>
+    <material id="4" name="Breeding Blanket (PbLi)">
+      <density value="9.4" units="g/cm3"/>
+      <nuclide name="Pb204" ao="0.011788"/>
+      <nuclide name="Pb206" ao="0.202922"/>
+      <nuclide name="Pb207" ao="0.186082"/>
+      <nuclide name="Pb208" ao="0.441208"/>
+      <nuclide name="Li6" ao="0.1422"/>
+      <nuclide name="Li7" ao="0.0158"/>
+    </material>
+    <material id="5" name="Outer Shield (W)">
+      <density value="19.3" units="g/cm3"/>
+      <nuclide name="W180" wo="0.001174575531392815"/>
+      <nuclide name="W182" wo="0.26227049476287323"/>
+      <nuclide name="W183" wo="0.14240602528446922"/>
+      <nuclide name="W184" wo="0.306581920873831"/>
+      <nuclide name="W186" wo="0.28756698354743376"/>
+    </material>
+    <material id="8" name="Steel Reflector">
+      <density value="6.544000000000002" units="g/cm3"/>
+      <nuclide name="Fe54" ao="0.029515855182861768"/>
+      <nuclide name="Fe56" ao="0.4633358043538579"/>
+      <nuclide name="Fe57" ao="0.010700444334043472"/>
+      <nuclide name="Fe58" ao="0.001424032705144058"/>
+      <nuclide name="Cr50" ao="0.006306693664737315"/>
+      <nuclide name="Cr52" ao="0.12161830966045457"/>
+      <nuclide name="Cr53" ao="0.013790540048025143"/>
+      <nuclide name="Cr54" ao="0.003432757311186135"/>
+      <nuclide name="Ni58" ao="0.06127620908784477"/>
+      <nuclide name="Ni60" ao="0.023603486036107145"/>
+      <nuclide name="Ni61" ao="0.0010260271948228288"/>
+      <nuclide name="Ni62" ao="0.0032714236683775524"/>
+      <nuclide name="Ni64" ao="0.0008331351623195112"/>
+      <nuclide name="Mo92" ao="0.001646089612018059"/>
+      <nuclide name="Mo94" ao="0.001032331576599762"/>
+      <nuclide name="Mo95" ao="0.0017836289447445322"/>
+      <nuclide name="Mo96" ao="0.0018735239334546452"/>
+      <nuclide name="Mo97" ao="0.0010767172272753804"/>
+      <nuclide name="Mo98" ao="0.0027296613321825852"/>
+      <nuclide name="Mo100" ao="0.0010949209624891783"/>
+      <nuclide name="Mn55" ao="0.014130067943963895"/>
+      <nuclide name="Si28" ao="0.007081174152313386"/>
+      <nuclide name="Si29" ao="0.000359561819396402"/>
+      <nuclide name="Si30" ao="0.00023702475814787368"/>
+      <nuclide name="Co59" ao="0.0003658937228773009"/>
+      <nuclide name="Nb93" ao="4.6419389421408833e-05"/>
+      <nuclide name="H1" ao="0.15091533692796866"/>
+      <nuclide name="H2" ao="2.3507215586917344e-05"/>
+      <nuclide name="O16" ao="0.0752898501289002"/>
+      <nuclide name="O17" ao="2.8602910965203782e-05"/>
+      <nuclide name="O18" ao="0.00015096903191238426"/>
+    </material>
+  </materials>
+  <geometry>
+    <cell id="1" name="Copper Magnet Rod" material="1" region="-1 -8" universe="1"/>
+    <cell id="2" name="Protective Shield" material="2" region="2 -3 -8" universe="1"/>
+    <cell id="3" name="First Wall" material="3" region="3 4 -5" universe="1"/>
+    <cell id="4" name="Breeding Blanket" material="4" region="3 5 -6" universe="1"/>
+    <cell id="5" name="Reflector" material="8" region="3 6 -7" universe="1"/>
+    <cell id="6" name="Outer Shield" material="5" region="3 7 -8" universe="1"/>
+    <cell id="7" name="Plasma" material="void" region="-10" universe="1"/>
+    <cell id="8" name="Vacuum Space" material="void" region="-8 (1 | 8) (-2 | 3 | 8) (-3 | -4 | 5) (-3 | -5 | 6) (-3 | -6 | 7) (-3 | -7 | 8) 10" universe="1"/>
+    <cell id="9" name="Graveyard Void" material="void" region="8 -9" universe="1"/>
+    <surface id="1" type="z-cylinder" coeffs="0.0 0.0 20.0"/>
+    <surface id="2" type="z-cylinder" coeffs="0.0 0.0 23.0"/>
+    <surface id="3" type="z-cylinder" coeffs="0.0 0.0 53.0"/>
+    <surface id="4" type="sphere" coeffs="0.0 0.0 0.0 200.0"/>
+    <surface id="5" type="sphere" coeffs="0.0 0.0 0.0 201.0"/>
+    <surface id="6" type="sphere" coeffs="0.0 0.0 0.0 301.0"/>
+    <surface id="7" type="sphere" coeffs="0.0 0.0 0.0 321.0"/>
+    <surface id="8" type="sphere" coeffs="0.0 0.0 0.0 351.0"/>
+    <surface id="9" type="sphere" boundary="vacuum" coeffs="0.0 0.0 0.0 500.0"/>
+    <surface id="10" type="z-torus" coeffs="0.0 0.0 0.0 126.5 100.0 50.0"/>
+  </geometry>
+  <settings>
+    <run_mode>fixed source</run_mode>
+    <particles>100000</particles>
+    <batches>100</batches>
+    <inactive>20</inactive>
+    <source type="independent" strength="1.0" particle="neutron">
+      <space type="cylindrical">
+        <r type="discrete">
+          <parameters>126.5 1.0</parameters>
+        </r>
+        <phi type="uniform" parameters="0.0 6.283185307179586"/>
+        <z type="discrete">
+          <parameters>0.0 1.0</parameters>
+        </z>
+      </space>
+      <angle type="isotropic"/>
+      <energy type="mixture">
+        <pair probability="0.002983041679522599">
+          <dist type="normal" parameters="2507372.9884064235 160384.03773694963"/>
+        </pair>
+        <pair probability="0.9926467764465933">
+          <dist type="normal" parameters="14072874.253353246 337721.7629216137"/>
+        </pair>
+        <pair probability="0.004370181873884067">
+          <dist type="tabular" interpolation="linear-linear">
+            <parameters>121212.12121212122 242424.24242424243 363636.36363636365 484848.48484848486 606060.6060606061 727272.7272727273 848484.8484848485 969696.9696969697 1090909.0909090908 1212121.2121212122 1333333.3333333335 1454545.4545454546 1575757.5757575757 1696969.696969697 1818181.8181818184 1939393.9393939395 2060606.0606060605 2181818.1818181816 2303030.303030303 2424242.4242424243 2545454.5454545454 2666666.666666667 2787878.787878788 2909090.909090909 3030303.0303030303 3151515.1515151514 3272727.272727273 3393939.393939394 3515151.515151515 3636363.6363636367 3757575.757575758 3878787.878787879 4000000.0 4121212.121212121 4242424.242424242 4363636.363636363 4484848.484848485 4606060.606060606 4727272.7272727275 4848484.848484849 4969696.96969697 5090909.090909091 5212121.212121212 5333333.333333334 5454545.454545455 5575757.575757576 5696969.696969697 5818181.818181818 5939393.939393939 6060606.060606061 6181818.181818182 6303030.303030303 6424242.424242425 6545454.545454546 6666666.666666667 6787878.787878788 6909090.909090909 7030303.03030303 7151515.151515151 7272727.272727273 7393939.3939393945 7515151.515151516 7636363.636363637 7757575.757575758 7878787.878787879 8000000.0 8121212.121212121 8242424.242424242 8363636.363636364 8484848.484848484 8606060.606060605 8727272.727272727 8848484.84848485 8969696.96969697 9090909.090909092 9212121.212121213 9333333.333333334 9454545.454545455 9575757.575757576 9696969.696969697 9818181.818181818 9939393.93939394 10060606.06060606 10181818.181818182 10303030.303030303 10424242.424242424 10545454.545454545 10666666.666666668 10787878.787878789 10909090.90909091 11030303.030303031 11151515.151515152 11272727.272727273 11393939.393939395 11515151.515151516 11636363.636363637 11757575.757575758 11878787.878787879 12000000.0 1.1179954326759604e-10 1.9067708303175677e-10 2.4151342439671643e-10 2.8007690268644065e-10 3.12732557266258e-10 3.4248618769505405e-10 3.709386275874759e-10 3.9898331487692337e-10 4.2706713482237967e-10 4.5525395913054525e-10 4.831656186469754e-10 5.098202488911891e-10 5.334354116452295e-10 5.514874943379074e-10 5.615639042483637e-10 5.630540950481371e-10 5.581965365114803e-10 5.50912266837717e-10 5.445177273346475e-10 5.405987839024486e-10 5.393642162293794e-10 5.403981781219757e-10 5.431456020221822e-10 5.470984152272904e-10 5.518272250341058e-10 5.569616636362761e-10 5.621650297408806e-10 5.671198032238361e-10 5.715304281401337e-10 5.751439162891498e-10 5.777806826725496e-10 5.793611059146848e-10 5.799127148668241e-10 5.795517252304406e-10 5.78446769105508e-10 5.767799133151838e-10 5.747167995376255e-10 5.72390077446738e-10 5.698942231336831e-10 5.672875046608369e-10 5.645971917740079e-10 5.618253682085575e-10 5.589539608561699e-10 5.559484992529475e-10 5.527606952754827e-10 5.493305156843128e-10 5.455887260196311e-10 5.414598704420493e-10 5.368643354050991e-10 5.317191714138123e-10 5.25939343710133e-10 5.194408845887388e-10 5.121461167828601e-10 5.03990742877736e-10 4.949327193377138e-10 4.849628620616518e-10 4.741172015955453e-10 4.6249116203470484e-10 4.50255692539468e-10 4.3767601227817e-10 4.2513508562950773e-10 4.131665114298553e-10 4.0250500656251654e-10 3.941637124463079e-10 3.8952991437558667e-10 3.9038952028273593e-10 3.9858925810689194e-10 4.1481751325361717e-10 4.3625515899476607e-10 4.542920388333955e-10 4.5535382331779713e-10 4.270329843628304e-10 3.6657112179516436e-10 2.8435330152488334e-10 1.9843962929925717e-10 1.2473726000962088e-10 7.081723556765126e-11 3.629925822885549e-11 1.6691715884346057e-11 6.803139201654889e-12 2.4215967779023165e-12 7.421872671426009e-13 1.9360260537593822e-13 4.262231593628876e-14 7.875477482428382e-15 1.2173058392223784e-15 1.571448966535892e-16 1.6935240918188153e-17 1.5242266389262252e-18 1.14684607606102e-19 7.223786925085884e-21 3.81555636475264e-22 1.693155197151195e-23 6.32486163603684e-25 1.993091102935048e-26 5.3095111907523885e-28 1.198326543549189e-29 2.2963390320681194e-31 3.744409162956207e-33</parameters>
+          </dist>
+        </pair>
+      </energy>
+    </source>
+    <photon_transport>true</photon_transport>
+    <survival_biasing>true</survival_biasing>
+  </settings>
+  <tallies>
+    <mesh id="1">
+      <dimension>200 1 200</dimension>
+      <lower_left>-350.0 -10.0 -350.0</lower_left>
+      <upper_right>350.0 10.0 350.0</upper_right>
+    </mesh>
+    <filter id="1" type="cell">
+      <bins>4</bins>
+    </filter>
+    <filter id="3" type="particle">
+      <bins>neutron</bins>
+    </filter>
+    <filter id="2" type="cell">
+      <bins>1 2 3 4 5 6 7 8 9</bins>
+    </filter>
+    <filter id="4" type="particle">
+      <bins>photon</bins>
+    </filter>
+    <filter id="5" type="mesh">
+      <bins>1</bins>
+    </filter>
+    <tally id="1" name="TBR">
+      <filters>1 3</filters>
+      <scores>H3-production</scores>
+    </tally>
+    <tally id="2" name="All_Cells_Neutron">
+      <filters>2 3</filters>
+      <scores>flux heating</scores>
+    </tally>
+    <tally id="3" name="All_Cells_Damage">
+      <filters>2 3</filters>
+      <nuclides>B10 B11 Co59 Cr50 Cr52 Cr53 Cr54 Cu63 Cu65 Fe54 Fe56 Fe57 Fe58 H1 H2 Li6 Li7 Mn55 Mo100 Mo92 Mo94 Mo95 Mo96 Mo97 Mo98 Nb93 Ni58 Ni60 Ni61 Ni62 Ni64 O16 O17 O18 Pb204 Pb206 Pb207 Pb208 Si28 Si29 Si30 W180 W182 W183 W184 W186 total</nuclides>
+      <scores>damage-energy</scores>
+    </tally>
+    <tally id="4" name="All_Cells_Gamma">
+      <filters>2 4</filters>
+      <scores>flux heating</scores>
+    </tally>
+    <tally id="5" name="All_Cells_Total">
+      <filters>2</filters>
+      <scores>heating</scores>
+    </tally>
+    <tally id="6" name="TBR_Spatial">
+      <filters>5 3</filters>
+      <scores>H3-production</scores>
+    </tally>
+    <tally id="7" name="Flux_Spatial">
+      <filters>5 3</filters>
+      <scores>flux</scores>
+    </tally>
+  </tallies>
+</model>

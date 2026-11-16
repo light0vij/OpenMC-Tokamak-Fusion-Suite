@@ -1,0 +1,8 @@
+Component,Inner Radius (cm),Outer Radius (cm),Thickness (cm),Z-Length (cm),Volume (cm^3)
+Copper Magnet Rod (Central),0.0,20.0,20.0,Spherical Cap (R=351),881442.7966815233
+Protective Shield (Central),23.0,53.0,30.0,Spherical Cap (R=351),4994113.929650545
+First Wall (Spherical),200.0,201.0,1.0,Spherical Shell,487203.2363401614
+Breeding Blanket (Spherical),201.0,301.0,100.0,Spherical Shell,78430637.56348874
+Steel Reflector (Spherical),301.0,321.0,20.0,Spherical Shell,23961423.2762423
+Outer Shield (Spherical),321.0,351.0,30.0,Spherical Shell,42056237.56852098
+Plasma Torus,Major a: 126.5,"Minor b: 100.0, c: 50.0",-,Torus,0.0

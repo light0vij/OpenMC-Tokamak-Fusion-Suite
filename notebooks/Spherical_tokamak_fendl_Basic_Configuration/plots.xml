@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<plots>
+  <plot id="11" filename="ST_radial_build_xz" color_by="cell" type="slice" basis="xz">
+    <pixels>800 800</pixels>
+    <origin>0.0 0.0 0.0</origin>
+    <width>1100.0 1100.0</width>
+    <color id="18" rgb="200 100 50"/>
+    <color id="19" rgb="128 0 128"/>
+    <color id="20" rgb="100 100 100"/>
+    <color id="21" rgb="100 150 200"/>
+    <color id="22" rgb="180 180 180"/>
+    <color id="23" rgb="50 50 50"/>
+    <color id="24" rgb="255 0 0"/>
+    <color id="25" rgb="255 255 255"/>
+    <color id="26" rgb="64 224 208"/>
+  </plot>
+  <plot id="12" filename="ST_radial_build_xy" color_by="cell" type="slice" basis="xy">
+    <pixels>800 800</pixels>
+    <origin>0.0 0.0 0.0</origin>
+    <width>1100.0 1100.0</width>
+    <color id="18" rgb="200 100 50"/>
+    <color id="19" rgb="128 0 128"/>
+    <color id="20" rgb="100 100 100"/>
+    <color id="21" rgb="100 150 200"/>
+    <color id="22" rgb="180 180 180"/>
+    <color id="23" rgb="50 50 50"/>
+    <color id="24" rgb="255 0 0"/>
+    <color id="25" rgb="255 255 255"/>
+    <color id="26" rgb="64 224 208"/>
+  </plot>
+</plots>
