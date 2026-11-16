@@ -1,4 +1,4 @@
-# OpenMC Tokamak Fusion Neutronics Suite
+# OpenMC Compact Spherical-Tokamak Fusion Neutronics Suite
 
 A neutronics workflow for a **spherical tokamak**, built with [OpenMC](https://docs.openmc.org) and packed in a Docker container with JupyterLab. 
 
