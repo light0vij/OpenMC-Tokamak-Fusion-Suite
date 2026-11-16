@@ -1,0 +1,10 @@
+.DS_Store
+.ipynb_checkpoints/
+__pycache__/
+.env
+openmc_data/
+
+# Simulation results are generated when the notebooks run.
+# The folders stay in the repository through their .gitkeep files.
+notebooks/Spherical_tokamak_*/*
+!notebooks/Spherical_tokamak_*/.gitkeep
