@@ -117,7 +117,7 @@ OpenMC-Tokamak-Fusion-Suite/
 ├── requirements.txt
 ├── images/            # fusion diagrams used in this README
 ├── chain/             # depletion chain (chain_fendl30_fusion_complete.xml) and its Readme.md
-└── notebooks/         # config.py, the four notebooks, and the four (empty) result folders
+└── notebooks/         # config.py, the four notebooks, and the four result folders with the outputs and other data. 
 ```
 
 
