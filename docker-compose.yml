@@ -1,0 +1,57 @@
+
+# docker-compose.yml
+
+# BUILD AND START (the first build compiles OpenMC and takes a while):
+#   docker compose up -d --build
+#
+# ACCESS:
+#   http://localhost:8888    — no password needed (open to this computer only)
+
+services:
+
+  openmc-jupyter:
+
+    build:
+      context: .
+      args:
+        COMPILE_CORES: 4
+
+    image: openmc-tokamak-fusion-suite:latest
+
+    container_name: OpenMC-Tokamak-Fusion-Suite
+
+    ports:
+      - "127.0.0.1:8888:8888"
+
+    shm_size: "2gb"    # To prevent PyVista/Trame kernel crash
+
+    volumes:
+      # Everything the notebooks write appears in these folders on your computer.
+      - ./notebooks:/workspace/notebooks
+      # Depletion chain (part of this repository): /workspace/chain/chain_fendl30_fusion_complete.xml
+      - ./chain:/workspace/chain
+
+      # Nuclear data (read-only). Edit the left-hand paths if your data are elsewhere; keep the container paths.
+      - ./openmc_data/fendl-3.2-hdf5:/nuclear_data/fendl-3.2-hdf5:ro
+      # Optional libraries (remove the # if you have downloaded them):
+      # - ./openmc_data/endfb-viii.0-hdf5:/nuclear_data/endfb-viii.0-hdf5:ro
+      # - ./openmc_data/endfb-vii.1-hdf5:/nuclear_data/endfb-vii.1-hdf5:ro
+
+    environment:
+      - JUPYTER_ENABLE_LAB=yes
+
+    
+    deploy:
+      resources:
+        limits:
+          cpus: "6"
+          memory: "12g"
+
+    restart: unless-stopped
+
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8888/lab"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 30s

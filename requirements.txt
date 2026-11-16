@@ -1,0 +1,34 @@
+#  OpenMC compiled from source in the Dockerfile.
+
+
+# Neutronics helpers 
+openmc_data_downloader
+openmc_data
+openmc_source_plotter
+openmc_depletion_plotter
+openmc_regular_mesh_plotter
+neutronics_material_maker[density]
+openmc_plasma_source
+
+# Scientific
+numpy>=2.0.0
+scipy
+matplotlib==3.9.1
+pandas==2.2.2
+h5py>=3.11.0
+uncertainties
+pyvista
+trame
+
+# others
+rich
+tqdm
+joblib
+
+# Jupyter and Plotting
+jupyterlab
+notebook
+ipywidgets
+ipympl
+plotly
+seaborn
