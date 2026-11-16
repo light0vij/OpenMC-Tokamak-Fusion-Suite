@@ -1,0 +1,61 @@
+# .dockerignore
+# Files excluded from the Docker build context.
+# The build context is the ./ folder itself.
+
+# Git internals (never needed inside image)
+.git
+.gitignore
+.gitattributes
+
+# CI/CD config
+.github/
+
+# Local environment / secrets
+.env
+*.env
+.env.*
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Test outputs
+.pytest_cache/
+.coverage
+htmlcov/
+
+# OS / archive artefacts
+.DS_Store
+Thumbs.db
+__MACOSX/
+
+# Large local data — mounted as a volume, never baked into the image
+openmc_data/
+nuclear_data/
+
+# Documentation, images and run scripts are not needed inside the image
+README.md
+images/
+*.sh
+docker-compose.yml
+
+# notebooks/ and chain/ are copied into the image.
+# Result folders inside notebooks/ are filled at run time (through the volume),
+# so only their .gitkeep markers are copied.
+notebooks/Spherical_tokamak_*/**
+!notebooks/Spherical_tokamak_*/.gitkeep
+
+# Editor configs
+.vscode/
+.idea/
+*.swp
+*.swo
